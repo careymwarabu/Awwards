@@ -22,9 +22,9 @@ python3.8 manage.py runserver
 python3.8 manage.py test awwardsapp
 
 # Technology used
-*Python3.8
-*Django
-*Heroku
+Python3.8
+Django
+Heroku
 
 # Known Bugs
 There are no known bugs currently.
