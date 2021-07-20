@@ -1,0 +1,29 @@
+{%extends "django_registration/base.html"%}
+{% load static %}
+{%load bootstrap4 %}
+{% block content %}
+<div class="container">
+    <div class="welcome">
+      <div class="signinbox">
+        <div id="signin">
+          <h1>sign in</h1>
+          <form action="/accounts/login/" method="post" class="more-padding" autocomplete="off">
+            {% csrf_token %}
+            {% bootstrap_form form%}
+            <button class="button submit" type="submit">Login</button>
+        </form>
+        </div>
+      </div>      
+      <div class="rightbox">
+        <div class="logo-wrap">
+          <a href="/">a<span>WWW</span>ards.</a>
+        </div>
+        <h2 class="spacer"></h2>
+        <p class="account">don't have an account?</p>
+        <a href="/accounts/register/"><button class="button signup">sign up</button></a>
+      </div>
+    </div>
+   </div>
+  
+  </div>
+{% endblock %}
